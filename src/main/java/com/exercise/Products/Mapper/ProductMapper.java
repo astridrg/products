@@ -16,5 +16,7 @@ public interface ProductMapper {
 
     @Mapping(target = "typePackingEntityList", ignore = true)
     @Mapping(source = "idTypeProduct" , target = "productTypeEntity.idTypeProduct")
+
+    
     public ProductEntity toEntity(ProductDTO productDTO);
 }
